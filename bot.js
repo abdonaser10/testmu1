@@ -20,7 +20,7 @@ const gif = require("gif-search"); // npm i gif-search
  
 const client = new Discord.Client({disableEveryone: true});
  
-const prefix = "2";
+const prefix = "1";
 /////////////////////////
 ////////////////////////
  
@@ -311,7 +311,7 @@ function play(guild, song) {
     serverQueue.textChannel.send(`**${song.title}**, is now playing!`);
 }
  
- 
+ const prefix = "1";
 client.on('message', message => {
     if (message.content === 'help') {
         let helpEmbed = new Discord.RichEmbed()
